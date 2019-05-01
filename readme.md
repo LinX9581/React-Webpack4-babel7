@@ -4,25 +4,13 @@ npm i && npm run server
 # React-Router-Dom
 [官方文件](https://reacttraining.com/react-router/web/guides/quick-start)  
 yarn.npm install react-router-dom  
-
-<pre>
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";  
 
-路由寫法
-<Link to="/about">about</Link>
-<Link to="/contact">contact</Link>
-<Link to="/home">home</Link>
+## 路由寫法  
+參考component/navbar.js  
 
-路由方式
-<Router>
-<div>
-    <Navbar />
-    <Route path="/about" component={About} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/home" component={Home} />
-</div>
-</Router>
-</pre>
+## 路由方式  
+參考index.js  
 
 # WEBPACK & BABEL
 需要建立 webpack.config.js
@@ -42,11 +30,12 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
         ]
     },
     mode: 'development',        //bundle模式
-<pre>
+</pre>  
+
 就能在app/index.js import其他js檔 或 require其他css檔  
 最後輸出到 dist/index_bundle.js  
 
-其他loader ex. sass less \.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)
+其他loader ex. sass less \.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)  
 或參考 [官方文件](https://webpack.js.org/concepts)  
 之後補充 Webpack 4版後的config寫法  
 
